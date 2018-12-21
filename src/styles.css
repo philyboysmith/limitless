@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('/src/fonts/helveticaneue-light-webfont.eot');
+    src: url('/assets/fonts/helveticaneue-light-webfont.eot');
     src: 
-         url('/src/fonts/helveticaneue-light-webfont.woff') format('woff'),
-         url('/src/fonts/helveticaneue-light-webfont.ttf') format('truetype'),
-         url('/src/fonts/helveticaneue-light-webfont.svg#helveticaneue-light-webfont') format('svg'),
-         url('/src/fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype');
+         url('/assets/fonts/helveticaneue-light-webfont.woff') format('woff'),
+         url('/assets/fonts/helveticaneue-light-webfont.ttf') format('truetype'),
+         url('/assets/fonts/helveticaneue-light-webfont.svg#helveticaneue-light-webfont') format('svg'),
+         url('/assets/fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }
