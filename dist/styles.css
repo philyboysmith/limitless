@@ -521,6 +521,7 @@ table {
 
 body {
   background: radial-gradient(180% 60% at bottom, rgba(178, 26, 26, .2) 0%, rgba(251, 215, 42, .2) 75%, rgba(35, 149, 143, .2) 100%);
+  margin-top: -2vw;
 }
 
 .list-reset {

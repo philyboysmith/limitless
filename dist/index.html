@@ -14,36 +14,70 @@
                 100%"
           src="assets/header.png" alt="Header" class="w-full">
       <div class="md:absolute pin-x pin-b">
-        <div class="m-auto max-w-sm text-center text-lg p-4 pb-8 md:text-2xl">
+        <div class="m-auto max-w-sm text-center text-lg p-4 pb-8 md:text-xl">
           <p>Let us take your company on a journey to health, happiness and increased performance.</p>
         </div>
       </div>
     </div>
     <div class="text-center my-16">
-      <a data-scroll href="#contactForm" id="contact" class="w-32 inline-block text-black no-underline uppercase text-center text-2xl">
+      <a data-scroll href="#contactForm" id="contact" class="w-32 inline-block text-black no-underline uppercase text-center text-sm md:text-xl">
         <span>Contact</span>
         <img src="assets/down.png" alt="down" class="w-24 my-2 mx-auto block"/>
       </a>
     </div>
     <div id="contactForm" class="flex flex-col justify-center m-auto max-w-sm w-full">
-      <div class="text-center p-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id cursus mi. Vivamus ut luctus urna, eu maximus lacus. Nullam tempus mauris nisl, finibus luctus dolor pellentesque quis. In vitae interdum libero. Nunc a metus at leo aliquam dictum vel ac neque.</p>
-      </div>
+      
       <div>
-        <form class="p-4 flex flex-col">
-          <input type="text" name="Name" placeholder="NAME" class="p-4 mb-4 bg-transparent border-2 border-green"/>
-          <input type="text" name="Company" placeholder="COMPANY" class="p-4 mb-4 bg-transparent border-2 border-yellow"/>
-          <input type="text" name="Email" placeholder="EMAIL" class="p-4 mb-4 bg-transparent border-2 border-orange"/>
-          <textarea name="Message" placeholder="MESSAGE" class="p-4 mb-4 bg-transparent border-2 border-red"></textarea>
+        <form class="p-4 flex flex-col" action="http://limitless.test/mail.php">
+          <div class="text-center p-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id cursus mi. Vivamus ut luctus urna, eu maximus lacus. Nullam tempus mauris nisl, finibus luctus dolor pellentesque quis. In vitae interdum libero. Nunc a metus at leo aliquam dictum vel ac neque.</p>
+          </div>
+          <input type="text" required="required" name="Name" placeholder="NAME" class="p-4 mb-4 bg-transparent border-2 border-green"/>
+          <input type="text" required="required" name="Company" placeholder="COMPANY" class="p-4 mb-4 bg-transparent border-2 border-yellow"/>
+          <input type="text" required="required" name="Email" placeholder="EMAIL" class="p-4 mb-4 bg-transparent border-2 border-orange"/>
+          <textarea name="Message" placeholder="MESSAGE" required="required" class="p-4 mb-4 bg-transparent border-2 border-red"></textarea>
           <button type="submit" class="bg-green text-white p-4 uppercase appearance-none ">Submit</button>
         </form>
+        
+        <div class="text-center p-4 hidden" id="thanks">
+          <p>Thank you so much for getting in touch! One of the team will get back to you in the next hour.</p>
+        </div>
+
       </div>
     </div>
+
+    <footer style="margin-top:100px;">
+      <p class="text-sm text-center p-8">&copy; 2019 Limitless</p>
+    </footer>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]',{
           speed: 1000
         });
+        $("#contactForm form").submit(function(e) {
+
+          
+          var form = $(this);
+          var url = form.attr('action');
+          $.ajax({
+                type: "POST",
+                url: url,
+                data: form.serialize(), // serializes the form's elements.
+                success: function(data)
+                {
+                  form.hide();
+                  $('#thanks').show();
+
+                }
+              });
+
+          e.preventDefault(); // avoid to execute the actual submit of the form.
+          });
       </script>
   <script type="text/javascript" src="main.js"></script></body>
 </html>
