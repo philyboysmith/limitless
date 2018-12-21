@@ -17,6 +17,7 @@
 
 body {
     background: radial-gradient(180% 60% at bottom, rgba(178,26,26,0.2) 0%, rgba(251,215,42,0.2) 75%, rgba(35,149,143,0.2) 100%); 
+    margin-top: -2vw;
 }
 
 @tailwind utilities;
