@@ -1,0 +1,22 @@
+@tailwind preflight;
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/src/fonts/helveticaneue-light-webfont.eot');
+    src: 
+         url('/src/fonts/helveticaneue-light-webfont.woff') format('woff'),
+         url('/src/fonts/helveticaneue-light-webfont.ttf') format('truetype'),
+         url('/src/fonts/helveticaneue-light-webfont.svg#helveticaneue-light-webfont') format('svg'),
+         url('/src/fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+@tailwind components;
+
+body {
+    background: radial-gradient(180% 60% at bottom, rgba(178,26,26,0.2) 0%, rgba(251,215,42,0.2) 75%, rgba(35,149,143,0.2) 100%); 
+}
+
+@tailwind utilities;

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Limitless</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body class="bg-grey-lighter font-sans leading-normal text-lg">
+    <div class="relative">
+        <img 
+          srcset="/src/header-mobile.png 1000w,
+        /src/header.png 3000w"
+          sizes="(max-width: 320px) 100%,
+                100%"
+          src="/src/header.png" alt="Header" class="w-full">
+      <div class="md:absolute pin-x pin-b">
+        <div class="m-auto max-w-sm text-center text-lg p-4 pb-8 md:text-2xl">
+          <p>Let us take your company on a journey to health, happiness and increased performance.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center my-16">
+      <a data-scroll href="#contactForm" id="contact" class="w-32 inline-block text-black no-underline uppercase text-center text-2xl">
+        <span>Contact</span>
+        <img src="/src/down.png" alt="down" class="w-24 my-2 mx-auto block"/>
+      </a>
+    </div>
+    <div id="contactForm" class="flex flex-col justify-center m-auto max-w-sm w-full">
+      <div class="text-center p-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id cursus mi. Vivamus ut luctus urna, eu maximus lacus. Nullam tempus mauris nisl, finibus luctus dolor pellentesque quis. In vitae interdum libero. Nunc a metus at leo aliquam dictum vel ac neque.</p>
+      </div>
+      <div>
+        <form class="p-4 flex flex-col">
+          <input type="text" name="Name" placeholder="NAME" class="p-4 mb-4 bg-transparent border-2 border-green"/>
+          <input type="text" name="Company" placeholder="COMPANY" class="p-4 mb-4 bg-transparent border-2 border-yellow"/>
+          <input type="text" name="Email" placeholder="EMAIL" class="p-4 mb-4 bg-transparent border-2 border-orange"/>
+          <textarea name="Message" placeholder="MESSAGE" class="p-4 mb-4 bg-transparent border-2 border-red"></textarea>
+          <button type="submit" class="bg-green text-white p-4 uppercase appearance-none ">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]',{
+          speed: 1000
+        });
+      </script>
+  </body>
+</html>
