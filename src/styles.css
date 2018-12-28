@@ -12,6 +12,30 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/assets/fonts/HelveticaNeue-Bold.eot');
+    src: 
+         url('/assets/fonts/HelveticaNeue-Bold.woff') format('woff'),
+         url('/assets/fonts/HelveticaNeue-Bold.ttf') format('truetype'),
+         url('/assets/fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg'),
+         url('/assets/fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/assets/fonts/HelveticaNeue-BoldItalic.eot');
+    src: 
+         url('/assets/fonts/HelveticaNeue-BoldItalic.woff') format('woff'),
+         url('/assets/fonts/HelveticaNeue-BoldItalic.ttf') format('truetype'),
+         url('/assets/fonts/HelveticaNeue-BoldItalic.svg#HelveticaNeue-BoldItalic') format('svg'),
+         url('/assets/fonts/HelveticaNeue-BoldItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: bold;
+    font-style: italic;
+  }
+
   
 @tailwind components;
 
