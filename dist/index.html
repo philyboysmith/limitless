@@ -8,34 +8,49 @@
     <link href="sarah.css" rel="stylesheet">
   </head>
     <body class="bg-grey-lighter font-sans leading-normal ">
-    <div class="relative">
-        <img 
-          srcset="assets/header-mobile.png 1000w,
-        assets/header.png 3000w"
-          sizes="(max-width: 320px) 100%,
-                100%"
-          src="assets/header.png" alt="Header" class="w-full">
-      <div class="pin-x pin-b">
-        <div class="m-auto max-w-md  md:text-lg p-4 pb-8 md:text-xl">
-            <p class="mb-4"><em >“When something is limitless, there's an unending amount or supply of it. If you truly believe there are limitless possibilities in life, you see no limit to what people can achieve.”</em></p>
+    <div class="relative top">
 
-            <p class="mb-4">Let us take your company on a journey to limitless health, happiness and performance.</p>
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Limitless">
+      </div>
+
+      <div class="pin-x pin-b">
+        <div class="m-auto max-w-md  md:text-lg p-4 pb-0 md:text-xl">
+            
+
+            <p class="mb-4 p-4 text-center"><strong>Let us take your employees on a journey to limitless health, happiness and performance.</strong></p>
+          </div>
+
+          <div class="text-center my-8 hidden-s">
+            <a data-scroll href="#contactForm" id="contact" class="w-32 inline-block text-black no-underline uppercase text-center text-sm md:text-xl">
+             
+              <img src="assets/down.png" alt="down" class="w-12 my-2 mx-auto block "/>
+            </a>
+          </div>
+
+        
                 
-                <p class="mb-4">We do this through tailored online journeys that bring harmony to the four key elements of health: </p>
-                  <p><strong>mind</strong> - be present<br />
-                <strong>rest</strong> - play more<br />
-                <strong>fuel</strong> - fill up<br />
-                <strong>move</strong> - level up<br /></p>
-                <p>For more information or to book a consultation, please contact us below.</p>        </div>
+          <div class="m-auto max-w-sm  md:text-lg p-4 pb-2 md:text-xl">      
+            <p class="mb-4 text-center font-light">We do this through tailored online journeys that bring harmony to the four key elements of health.</p>
+          </div>
+
+          <div class="m-auto max-w-md  md:text-lg p-4 pb-8 mb-2 clearfix">
+
+            <div class="icon"><img src="assets/icon-mind.svg" alt="Mind"></div>
+            <div class="icon"><img src="assets/icon-rest.svg" alt="Rest"></div>
+            <div class="icon"><img src="assets/icon-fuel.svg" alt="Fuel"></div>
+            <div class="icon"><img src="assets/icon-move.svg" alt="Move"></div>
+          </div>
+         
       </div>
     </div>
-    <div class="text-center my-16">
-      <a data-scroll href="#contactForm" id="contact" class="w-32 inline-block text-black no-underline uppercase text-center text-sm md:text-xl">
-        <span>Contact</span>
-        <img src="assets/down.png" alt="down" class="w-24 my-2 mx-auto block"/>
-      </a>
-    </div>
-    <div id="contactForm" class="flex flex-col justify-center m-auto max-w-lg w-full">
+
+    <div class="bottom">
+       <div class="m-auto max-w-sm  md:text-lg p-4 pb-2 md:text-xl">  
+        <p class="font-light text-center"><em>For more information or to book a consultation, please contact us below.</em></p>
+      </div>
+
+          <div id="contactForm" class="flex flex-col justify-center m-auto max-w-md w-full">
       
       <div>
         <form class="p-4 flex flex-col" action="http://limitless.test/mail.php">
@@ -54,9 +69,16 @@
       </div>
     </div>
 
+
+    
+
+
+
     <footer style="margin-top:100px;">
       <p class="text-sm text-center p-8">&copy; 2019 Limitless</p>
     </footer>
+
+    </div>
 
     <script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"

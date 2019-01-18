@@ -485,24 +485,24 @@ table {
 
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url('/assets/fonts/helveticaneue-light-webfont.eot');
-  src: url('/assets/fonts/helveticaneue-light-webfont.woff') format('woff'), url('/assets/fonts/helveticaneue-light-webfont.ttf') format('truetype'), url('/assets/fonts/helveticaneue-light-webfont.svg#helveticaneue-light-webfont') format('svg'), url('/assets/fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../assets/fonts/helveticaneue-light-webfont.eot');
+  src: url('../assets/fonts/helveticaneue-light-webfont.woff') format('woff'), url('/..assets/fonts/helveticaneue-light-webfont.ttf') format('truetype'), url('../assets/fonts/helveticaneue-light-webfont.svg#helveticaneue-light-webfont') format('svg'), url('../assets/fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url('/assets/fonts/HelveticaNeue-Bold.eot');
-  src: url('/assets/fonts/HelveticaNeue-Bold.woff') format('woff'), url('/assets/fonts/HelveticaNeue-Bold.ttf') format('truetype'), url('/assets/fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg'), url('/assets/fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('../assets/fonts/HelveticaNeue-Bold.eot');
+  src: url('/..assets/fonts/HelveticaNeue-Bold.woff') format('woff'), url('../assets/fonts/HelveticaNeue-Bold.ttf') format('truetype'), url('../assets/fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg'), url('../assets/fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url('/assets/fonts/HelveticaNeue-BoldItalic.eot');
-  src: url('/assets/fonts/HelveticaNeue-BoldItalic.woff') format('woff'), url('/assets/fonts/HelveticaNeue-BoldItalic.ttf') format('truetype'), url('/assets/fonts/HelveticaNeue-BoldItalic.svg#HelveticaNeue-BoldItalic') format('svg'), url('/assets/fonts/HelveticaNeue-BoldItalic.eot?#iefix') format('embedded-opentype');
+  src: url('../assets/fonts/HelveticaNeue-BoldItalic.eot');
+  src: url('../assets/fonts/HelveticaNeue-BoldItalic.woff') format('woff'), url('../assets/fonts/HelveticaNeue-BoldItalic.ttf') format('truetype'), url('../assets/fonts/HelveticaNeue-BoldItalic.svg#HelveticaNeue-BoldItalic') format('svg'), url('../assets/fonts/HelveticaNeue-BoldItalic.eot?#iefix') format('embedded-opentype');
   font-weight: bold;
   font-style: italic;
 }
@@ -536,8 +536,9 @@ table {
 }
 
 body {
-  background: radial-gradient(180% 60% at bottom, rgba(178, 26, 26, .2) 0%, rgba(251, 215, 42, .2) 75%, rgba(35, 149, 143, .2) 100%);
-  margin-top: -2vw;
+  /*background: radial-gradient(180% 60% at bottom, rgba(178, 26, 26, .2) 0%, rgba(251, 215, 42, .2) 75%, rgba(35, 149, 143, .2) 100%);*/
+background: linear-gradient(to bottom, rgba(227,240,225,1) 0%, rgba(249,247,215,1) 31%, rgba(245,215,212,1) 91%, rgba(245,215,212,1) 100%);
+  
 }
 
 .list-reset {
