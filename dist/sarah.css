@@ -12,7 +12,7 @@ button, input {
 
 
 .logo {
-	width:112px;
+	width:100px;
 	position: absolute;
 	left:0;
 	right:0;
@@ -26,7 +26,7 @@ button, input {
 	@media only screen and (max-width: 900px) {
 
 		.logo {
-			width:100px;
+			width:96px;
 			top:10px;
 		}
 		
@@ -83,22 +83,45 @@ button, input {
 .top {
 	background-image:url(assets/header.svg);
 	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: contain;
-	padding-top: 53%; /* (img-height / img-width * container-width) */
+	background-position: top -100px center;
+	background-size: cover;
+	padding-top: 47%; /* (img-height / img-width * container-width) */
                 /* (382 / 600 * 100) */
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
+
+	.top {
+		background-size: contain;
+		background-position: top -40px center;
+	}
+
+
+	}
+
+
+
+
+@media only screen and (max-width: 1000px) {
 
 	.top {
 		background-image:url(assets/header-mobile.svg);
-		padding-top: 100%; 
+		padding-top: 81%; 
 		background-size: contain;
+		background-position: top -120px center;
 
 	}
 
 }
+
+
+@media only screen and (max-width: 700px) {
+
+		.top {
+			background-position: top -40px center;
+		}
+
+	}
 
 
 .bottom {
